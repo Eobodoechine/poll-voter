@@ -35,12 +35,13 @@ names = list(set(change))
 for row in change:
     if row == 'Correy':
         correy_count += 1
+    elif row == 'Khan':
+        khan_count += 1
     elif row == 'Li':
         li_count += 1
     elif row == "O'Tooley":
         tooley_count += 1
-    elif row == 'Khan':
-        khan_count += 1
+    
 
 #create coount list and add values to it
 count = []
@@ -55,16 +56,15 @@ percentages = []
 correy_perc = correy_count/total
 correy_percentage = "{:.3%}".format(correy_perc)
 percentages.append(correy_percentage)
-li_perc = li_count/total
-li_percentage = "{:.3%}".format(li_perc)
-percentages.append(li_percentage)
 khan_perc = khan_count/total
 khan_percentage = "{:.3%}".format(khan_perc)
 percentages.append(khan_percentage)
+li_perc = li_count/total
+li_percentage = "{:.3%}".format(li_perc)
+percentages.append(li_percentage)
 tooley_perc = tooley_count/total
 tooley_percentage = "{:.3%}".format(tooley_perc)
 percentages.append(tooley_percentage)
-
 
 #Find max percentage, combine lists
 maxp = max(percentages)
