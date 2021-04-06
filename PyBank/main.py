@@ -13,7 +13,6 @@ with open(bank_csv) as csv_file:
     csvreader = csv.reader(csv_file, delimiter=",")
     header = next(csvreader)
     reader = list(csvreader)
-    total = 0
     lines = len(reader)
     change = []
     yansh = []
